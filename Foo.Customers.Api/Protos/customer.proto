@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option csharp_namespace = "Foo.Customers.Api";
+
+package customer.v1;
+
+// The service definition.
+service CustomersService {
+  // Sends a greeting
+  rpc GetAll (CustomerRequest) returns (CustomerReply);
+}
+
+// The request message
+message CustomerRequest {}
+
+// The response model content
+message Customer {
+  int32 id = 1;
+  string name = 2;
+}
+
+// The response message.
+message CustomerReply {
+  repeated Customer customers = 1;
+}
