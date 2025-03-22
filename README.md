@@ -3,6 +3,6 @@ POC using .NET Microservices and gRPC
 
 
 ## Communication flow
-Simple diagram to demostrated the communication
+Simple diagram to demostrate the communication
 
 ![image](diagram.png)
